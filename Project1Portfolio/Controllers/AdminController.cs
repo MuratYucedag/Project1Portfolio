@@ -6,11 +6,23 @@ using System.Web.Mvc;
 
 namespace Project1Portfolio.Controllers
 {
-    public class AdminController : Controller
-    {
-        public ActionResult Index()
-        {
-            return View();
-        }
-    }
+	public class AdminController : Controller
+	{
+		public ActionResult Index()
+		{
+			return View();
+		}
+		public PartialViewResult PartialHead()
+		{
+			return PartialView();
+		}
+		public PartialViewResult PartialSideBar()
+		{
+			return PartialView();
+		}
+		public PartialViewResult PartialNavbar()
+		{
+			return PartialView();
+		}
+	}
 }
