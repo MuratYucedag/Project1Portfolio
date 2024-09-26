@@ -19,6 +19,8 @@ namespace Project1Portfolio.Controllers
         public ActionResult MessageDetails(int id)
         {
             var value = context.Message.Where(x => x.MessageId == id).FirstOrDefault();
+            value.IsRead = true;
+            context.SaveChanges();
             return View(value);
         }
 
