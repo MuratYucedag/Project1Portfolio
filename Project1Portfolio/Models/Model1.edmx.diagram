@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ed0b70148039400ca9a1fe5da309c56e" Name="Diagram1">
+      <Diagram DiagramId="ed0b70148039400ca9a1fe5da309c56e" Name="Diagram1" ZoomLevel="55">
         <EntityTypeShape EntityType="MyPortfolio5DbModel.About" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MyPortfolio5DbModel.Category" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="MyPortfolio5DbModel.Education" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
@@ -17,6 +17,7 @@
         <EntityTypeShape EntityType="MyPortfolio5DbModel.Testimonial" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MyPortfolio5DbModel.Work" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
         <AssociationConnector Association="MyPortfolio5DbModel.FK_Message_Category" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MyPortfolio5DbModel.SocialMedia" Width="1.5" PointX="7.375" PointY="7.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

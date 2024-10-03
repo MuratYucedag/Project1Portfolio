@@ -1,4 +1,5 @@
-﻿
+﻿@model Project1Portfolio.Models.Message
+
 @{
     Layout = null;
 }
@@ -94,86 +95,7 @@
     </div>
     <!-- Exparience End -->
     <!-- Skills Start -->
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-3">
-                    <div class="skills-header h-100 bg-dark pt-6 pe-6 pb-6">
-                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                            <p class="text-white sub-title">Skills</p>
-                            <h1 class="display-6 text-white mb-0">My expertise skills</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="skills-content h-100 pt-6 ps-6 pb-6">
-                        <div class="row g-4">
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="text-primary text-center mb-3"><span class="fab fa-wordpress fa-3x"></span></div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">98</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">WordPress</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="text-primary text-center mb-3"><span class="fab fa-figma fa-3x"></span></div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">95</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">Figma</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="text-primary text-center mb-3"><span class="fab fa-sketch fa-3x"></span></div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">87</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">Sketch</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.7s">
-                                    <div class="text-primary text-center mb-3"><span class="fab fa-elementor fa-3x"></span></div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">75</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">Elementor</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">67</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">JavaScript</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                                <div class="skills-item text-center rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="text-primary text-center mb-3"><span class="fab fa-html5 fa-3x"></span></div>
-                                    <div class="counter-counting d-flex justify-content-center">
-                                        <h4 class="display-6" data-toggle="counter-up">98</h4>
-                                        <h4 class="display-6">%</h4>
-                                    </div>
-                                    <p class="mb-0">HTML & CSS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @Html.Action("PartialSkill", "Default")
     <!-- Skills End -->
     <!-- Service Start -->
     <div class="container-fluid" id="pigraService">
@@ -344,124 +266,6 @@
     </div>
     <!-- Portfolio End -->
     <!-- Blog Start -->
-    <div class="container-fluid" id="pigraBlog">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-3">
-                    <div class="blog-header h-100 bg-dark pt-6 pe-6 pb-6">
-                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                            <p class="text-white sub-title">Blog</p>
-                            <h1 class="display-6 text-white mb-0">Recent Posts</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="blog-content h-100 pt-6 ps-6 pb-6">
-                        <div class="row g-4">
-                            <div class="col-xl-6">
-                                <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="row g-4">
-                                        <div class="col-4">
-                                            <div class="blog-item-img bg-dark h-100">
-                                                <a href="#">
-                                                    <img src="img/blog-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div class="h-100">
-                                                <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 12, 2024</p>
-                                                <a href="#" class="d-inline-block h4 mb-4">Secrets of the Mobile Application</a>
-                                                <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                    <p class="mb-0 text-body">By <a href="#" class="h6">Bernard</a></p>
-                                                    <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="row g-4">
-                                        <div class="col-4">
-                                            <div class="blog-item-img bg-dark h-100">
-                                                <a href="#">
-                                                    <img src="img/blog-2.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div class="h-100">
-                                                <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 18, 2024</p>
-                                                <a href="#" class="d-inline-block h4 mb-4">How to Create Quality Figma Design</a>
-                                                <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                    <p class="mb-0 text-body">By <a href="#" class="h6">Walker</a></p>
-                                                    <p class="mb-0 text-body">In <a href="#" class="h6">Media</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="row g-4">
-                                        <div class="col-4">
-                                            <div class="blog-item-img bg-dark h-100">
-                                                <a href="#">
-                                                    <img src="img/blog-3.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div class="h-100">
-                                                <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 23, 2025</p>
-                                                <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                    <p class="mb-0 text-body">By <a href="#" class="h6">Jacob</a></p>
-                                                    <p class="mb-0 text-body">In <a href="#" class="h6">Lifestyle</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="blog-item wow fadeInUp" data-wow-delay="0.7s">
-                                    <div class="row g-4">
-                                        <div class="col-4">
-                                            <div class="blog-item-img bg-dark h-100">
-                                                <a href="#">
-                                                    <img src="img/blog-4.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Image">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div class="h-100">
-                                                <p class="text-body mb-3"><i class="fa fa-calendar-alt me-2"></i> November 26, 2025</p>
-                                                <a href="#" class="d-inline-block h4 mb-4">Tutorials for Learning Development</a>
-                                                <div class="py-2 px-3 bg-light d-flex justify-content-between">
-                                                    <p class="mb-0 text-body">By <a href="#" class="h6">Perkel</a></p>
-                                                    <p class="mb-0 text-body">In <a href="#" class="h6">Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-                                <div class="blog-btn d-flex justify-content-center">
-                                    <p class="mb-0 me-2">For More Works Visit</p>
-                                    <a href="#" class="btn d-inline-block p-0">Our Blog</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Blog End -->
     <!-- Testimonial Start -->
     <div class="container-fluid">
@@ -576,103 +380,64 @@
     <div class="container-fluid" id="pigraContact">
         <div class="container">
             <div class="row g-0">
-                <div class="col-lg-3">
-                    <div class="contact-header h-100 bg-dark pt-6 pe-6 pb-6">
-                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                            <p class="text-white sub-title">Contact Me</p>
-                            <h1 class="display-6 text-white mb-0">Let’s Start A New Project</h1>
-                        </div>
-                    </div>
-                </div>
+                @Html.Action("PartialContactSideBar", "Contact")
                 <div class="col-lg-9">
                     <div class="contact-content h-100 pt-6 ps-6 pb-6">
                         <div class="bg-light p-4">
                             <div class="row g-5">
-                                <div class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s">
-                                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                                    <div class="d-flex mb-4">
-                                        <div class="btn-xl-square bg-primary text-white me-3">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <div>
-                                            <h4>Address</h4>
-                                            <p class="mb-0">123 Street New York.USA</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex mb-4">
-                                        <div class="btn-xl-square bg-primary text-white me-3">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <div>
-                                            <h4>Mail Us</h4>
-                                            <p class="mb-0">info@example.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="btn-xl-square bg-primary text-white me-3">
-                                            <i class="fa fa-phone-alt"></i>
-                                        </div>
-                                        <div>
-                                            <h4>Telephone</h4>
-                                            <p class="mb-0">(+012) 3456 7890</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                @Html.Action("PartialContactAddress", "Contact")
+                         
                                 <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
                                     <div>
-                                        <form>
+                                        <form method="post">
                                             <div class="row g-3">
                                                 <div class="col-lg-12 col-xl-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
-                                                        <label for="name">Your Name</label>
+                                                        <input type="text" class="form-control border-0" id="name" placeholder="adınız soyadınız" name="Name">
+                                                        <label for="name">Adınız</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12 col-xl-6">
                                                     <div class="form-floating">
-                                                        <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
-                                                        <label for="email">Your Email</label>
+                                                        <input type="email" class="form-control border-0" id="email" placeholder="Email Adresiniz" name="Email">
+                                                        <label for="email">Email Adresi</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12 col-xl-6">
                                                     <div class="form-floating">
-                                                        <input type="phone" class="form-control border-0" id="phone" placeholder="Phone">
-                                                        <label for="phone">Your Phone</label>
+                                                        <input type="phone" class="form-control border-0" id="phone" placeholder="Telefon Numaranız" name="Phone">
+                                                        <label for="phone">Telefon</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12 col-xl-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control border-0" id="project" placeholder="Project">
-                                                        <label for="project">Your Project</label>
+                                                       @Html.DropDownListFor(x=>x.CategoryId,(List<SelectListItem>)ViewBag.v, new {@class="form-control"})
+                                                        <label for="project">Konu</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
-                                                        <label for="subject">Subject</label>
+                                                        <input type="text" class="form-control border-0" id="subject" placeholder="Konu Başlığı" name="Subject">
+                                                        <label for="subject">Konu Başlığı</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="form-floating">
-                                                        <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
-                                                        <label for="message">Message</label>
+                                                        <textarea class="form-control border-0" placeholder="Mesajınızı Buraya Yazınız" id="message" style="height: 120px" name="MessageDetail"></textarea>
+                                                        <label for="message">Mesajınız</label>
                                                     </div>
 
                                                 </div>
                                                 <div class="col-12">
-                                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                                    <button class="btn btn-primary w-100 py-3">Mesajı Gönder</button>
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="col-12 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="rounded">
-                                        <iframe class="rounded w-100"
-                                                style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd"
-                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
-                                </div>
+
+
+                                @Html.Action("PartialContactLocation", "Contact")
                             </div>
                         </div>
                     </div>
@@ -682,38 +447,9 @@
     </div>
     <!-- Contact End -->
     <!-- Footer Start -->
-    <div class="container-fluid footer bg-dark border-bottom-0">
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-12">
-                    <div class="footer-content h-100 pt-6 ps-6 pb-6">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-12 text-center">
-                                <div class="d-flex justify-content-center">
-                                    <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-light btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-body me-2"></i>Your Site Name</a>, All right reserved.</span>
-                            </div>
-                            <div class="col-12 text-center text-body">
-                                <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                                <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                                <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                                Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @Html.Action("PartialSocialMedia", "Default")
     <!-- Footer End -->
     <!-- Back to Top -->
     @Html.Action("PartialScript", "Default")
 </body>
-
 </html>

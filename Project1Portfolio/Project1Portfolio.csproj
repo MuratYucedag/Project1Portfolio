@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\ExperienceController.cs" />
@@ -177,6 +178,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Skill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SocialMedia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
@@ -505,6 +509,11 @@
     <Content Include="Views\Default\PartialAbout.cshtml" />
     <Content Include="Views\Default\PartialEducation.cshtml" />
     <Content Include="Views\Default\PartialScript.cshtml" />
+    <Content Include="Views\Default\PartialSkill.cshtml" />
+    <Content Include="Views\Default\PartialSocialMedia.cshtml" />
+    <Content Include="Views\Contact\PartialContactSideBar.cshtml" />
+    <Content Include="Views\Contact\PartialContactAddress.cshtml" />
+    <Content Include="Views\Contact\PartialContactLocation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
